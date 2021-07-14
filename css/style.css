@@ -208,6 +208,18 @@ div.first-nav {
 
 /* Main Interface of business image */
 
+.main-image img {
+    width: 100%;
+    height: 500px;
+}
+
+@media (max-width:768px) {
+    .main-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .easy-use button {
     border: none;
     background-color: var(--brand-color);
@@ -231,55 +243,79 @@ div.first-nav {
     color: white;
 }
 
-.col-sm-6 {
+
+/* .col-sm-6 {
     padding: 15px;
     height: 500px;
-}
+} */
 
-.section {
+.easy-use {
     margin-top: 100px;
     padding: 20px;
     text-align: left;
     margin-bottom: 80px;
 }
 
-.section h2 {
+@media (max-width:768px) {
+    .easy-use {
+        padding: 20px;
+    }
+}
+
+.easy-use h2 {
     margin-left: 0px;
     text-align: left;
 }
 
-.section p,
+@media (max-width:768px) {
+    .easy-use h2 {
+        text-align: center;
+    }
+}
+
+.easy-use p,
 h4 {
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.section p button {
+.easy-use p button {
     padding: 10px;
     margin-left: 20px;
     text-align: center;
 }
 
-
-/* Buy Aitime and Co */
-
-.col-sm-12 {
-    text-align: center;
-    background-color: black;
-    padding: 15px;
-    color: white;
-}
-
-.col-sm-12 h3 {
-    font-weight: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+@media (max-width:768px) {
+    .easy-use p button {
+        padding: 5px;
+        text-align: center;
+    }
 }
 
 
 /* Service section */
 
 #service {
-    background-color: var(--service-color);
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+#service h3 {
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width:768px) {
+    #service h3 {
+        font-weight: normal;
+        font-size: medium;
+    }
+}
+
+#service {
+    background-color: black;
 }
 
 .icon {
@@ -325,16 +361,16 @@ h1 {
 }
 
 .easy-steps h1 {
-    font-size: 18px;
     margin-bottom: 20px;
-    line-height: 28px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
+
+/* 
 .easy-steps p {
     font-size: 13px;
     font-weight: 400px
-}
+} */
 
 .easy-steps .easy-steps-h {
     text-align: center;
@@ -348,7 +384,7 @@ h1 {
     padding-top: 10px;
 }
 
-.col-sm-6 {
+.vendortips {
     padding: 10px;
 }
 
@@ -386,6 +422,13 @@ h1 {
     padding: 0 2%;
 }
 
+@media (max-width:768px) {
+    .partners img {
+        padding: 12px;
+        width: 150px;
+    }
+}
+
 .partners {
     margin-bottom: 2%;
 }
@@ -405,6 +448,11 @@ h1 {
 
 .testimonial .talk {
     color: blue;
+    text-align: center
+}
+
+.testimonial-slide .content {
+    padding: 0 50px;
 }
 
 
